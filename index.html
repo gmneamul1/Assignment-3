@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learning System</title>
     <!-- Bootstrap cdn link -->
+    
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <!-- google font link  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<script src="https://kit.fontawesome.com/fb5d7cc93b.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/fb5d7cc93b.js" crossorigin="anonymous"></script> -->
+
+<!-- *************************** -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<!-- ***************************** -->
+
+
+
 </head>
 <body>
    
@@ -123,7 +132,7 @@
          <div class="col-lg-6 ">
           <div class=" d-lg-flex d-md-flex justify-content-center align-items-center border border-gray rounded " >
             <div class="text-center ">
-                <img class="w-100"   src="images/course/course-3.png" alt="">
+                <img class="w-100"   src="images/course/course-1.png" alt="">
             </div>
             <div class="w-75 px-2 pt-2  ">
                 <div class=" text-wrap text-black  ">
@@ -138,7 +147,7 @@
           <div class="col-lg-6 ">
             <div class=" d-lg-flex d-md-flex justify-content-center align-items-center border border-gray rounded " >
               <div class="text-center ">
-                  <img class="w-100"   src="images/course/course-3.png" alt="">
+                  <img class="w-100"   src="images/course/course-2.png" alt="">
               </div>
               <div class="w-75 px-2 pt-2  ">
                   <div class=" text-wrap text-black  ">
@@ -168,7 +177,7 @@
            <div class="col-lg-6 ">
             <div class=" d-lg-flex d-md-flex justify-content-center align-items-center border border-gray rounded " >
               <div class="text-center ">
-                  <img class="w-100"   src="images/course/course-3.png" alt="">
+                  <img class="w-100"   src="images/course/course-4.png" alt="">
               </div>
               <div class="w-75 px-2 pt-2  ">
                   <div class=" text-wrap text-black  ">
@@ -183,7 +192,7 @@
            <div class="col-lg-6 ">
             <div class=" d-lg-flex d-md-flex justify-content-center align-items-center border border-gray rounded " >
               <div class="text-center ">
-                  <img class="w-100"   src="images/course/course-3.png" alt="">
+                  <img class="w-100"   src="images/course/course-5.png" alt="">
               </div>
               <div class="w-75 px-2 pt-2  ">
                   <div class=" text-wrap text-black  ">
@@ -198,7 +207,7 @@
            <div class="col-lg-6 ">
             <div class=" d-lg-flex d-md-flex justify-content-center align-items-center border border-gray rounded " >
               <div class="text-center ">
-                  <img class="w-100"   src="images/course/course-3.png" alt="">
+                  <img class="w-100"   src="images/course/course-6.png" alt="">
               </div>
               <div class="w-75 px-2 pt-2  ">
                   <div class=" text-wrap text-black  ">
@@ -220,16 +229,106 @@
 
 
 
+
 <!-- ready to join  -->
-<div class="container bg-info py-5 rounded ">
-  <div class="text-center d-lg-flex justify-content-around  align-items-center ">
-    <div class="m-2 px-">
-      <h3>Are You ready to join?</h3>
-      <p> Graphic design, page layout is the arrangement of visual elements on a page.  <br> It generally involves organizational principles  of composition to achieve specific communication objectives.</p>
+
+
+<!-- Ready to Join Section -->
+<section class="container mt-5 text-center" >
+  <div class="">
+    <div class="bg-info px-5 py-5 rounded mb-5 d-lg-flex justify-content-around align-items-center">
+      <div class=" ">
+        <h2 class="">Ready to Join?</h2>
+        <p>
+          Graphic design, page layout is the arrangement of visual elements on a page.  It generally involves organizational principles  of composition to achieve specific communication objectives.
+        </p>
+      </div>
+
+      <!-- Button trigger Modal -->
+     <div class="col-lg-6  d-lg-flex justify-content-lg- justify-content-center ">
+      <div
+      class="text-center rounded  py-2"
+    >
+      <a href="#" class="main-btn bg-white rounded px-4 py-3 register-btn text-center text-decoration-none  " data-bs-toggle="modal"
+        data-bs-target="#join"
+        >Go for join</a
+      >
     </div>
-    <div class="m- px-" ><a class="text-decoration-none border border-white bg-white px-3 py-2 rounded " href="">Go for join</a></div>
+     </div>
+
+      <!-- Main MOdal-->
+      <div
+        class="modal fade"
+        id="join"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content rounded-4 shadow bg-secondary">
+            <div class="modal-header p-5 pb-4 border-bottom-0">
+            <!-- Modla finction  -->
+              <h4 class="fw-semibold mb-0 text-info ">Register now </h4>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-2 pt-0">
+              <form class="">
+                <div class="form-floating mb-1">
+                  <input
+                    type="email"
+                    class="form-control rounded-3"
+                    id="floatingInput"
+                    placeholder="type your email"
+                  />
+                  <label for="floatingInput">Type Your  Email</label>
+                </div>
+                <div class="form-floating mb-2">
+                  <input
+                    type="password"
+                    class="form-control rounded-3"
+                    id="floatingPassword"
+                    placeholder="Password"
+                  />
+                  <label for="floatingPassword">Choose a  Password</label>
+                </div>
+                <button
+                  class="w-100 mb-2 btn btn-lg rounded-3 btn-dark"
+                  type="submit"
+                >
+                  Register
+                </button>
+                <small class="text-muted"
+                  >please read ours
+                  <a class="text-decoration-none" href="#">terms and conditions. </a> Then signup</small
+                >
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+</section>
+
+
+
 
 
 
@@ -326,6 +425,35 @@
 </div>
 </div>
  <!-- end companies logo at this section  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  <!-- now footer page  -->
  <footer class="text-center  bg-black text-white">
