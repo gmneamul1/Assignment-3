@@ -1,7 +1,6 @@
 
-.image img{
-    width: 16%;
-    padding: 15px;
+*{
+    font-family: 'Uchen', serif;
 }
 .back-color{
     background-color: rgb(131, 201, 201);
