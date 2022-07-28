@@ -1,7 +1,11 @@
-.margin{
-  
-}
+
 .image img{
     width: 16%;
     padding: 15px;
+}
+.back-color{
+    background-color: rgb(131, 201, 201);
+}
+.image1{
+margin-left: -20px;
 }
